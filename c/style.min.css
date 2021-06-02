@@ -380,7 +380,8 @@ nav.blue {
 /* -------- */
 #sitesearch {
     text-align: center;
-    margin-top: 2em
+    margin-top: 2em;
+    margin-bottom: 2em
 }
 #searchtext {
     border: 1px solid #fff;
@@ -1986,9 +1987,11 @@ select.input-sm {
     padding: 0 0 14px 15px;
     font-size: 20px
 }
-.navbar-toggler {
+
+/* .navbar-toggler {
     margin: 1.3em .9em
-}
+} */
+
 .navbar-form, .navbar-nav {
     margin: 7px -15px
 }

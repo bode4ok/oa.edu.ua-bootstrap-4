@@ -26,19 +26,12 @@
 	<header>
 		<nav class="navbar navbar-light fixed-top navbar-expand-md" role="navigation">
 			<div class="container">
-				<div class="headline d-none d-sm-block"></div>
+				<div class="headline d-none d-md-block"></div>
 				<div class="row nav-row">
 					<div class="col-md-4 col-lg-4 col-xl-4">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggler" data-toggle="collapse"
-								data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Навігація</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<div class="navbar-brand">
+							<div class="d-flex justify-content-between navbar-brand">
 								<a href="/">
 									<img src="im/logo.png" class="logo" alt="ОА">
 									<img src="im/logo_s.png" class="logo_s" alt="ОА">
@@ -46,25 +39,39 @@
 										<p class="d-none d-md-block">Національний університет</p>
 										<p>ОСТРОЗЬКА АКАДЕМІЯ</p>
 									</div>
-								</a>
-								<div style="clear:both;"></div>
+								</a>								
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-label="Переключатель навигации">
+									<span class="sr-only">Навігація</span>
+									<span class="navbar-toggler-icon"></span>
+								  </button>
+
+							<!-- <button type="button" class="navbar-toggler" data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Навігація</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button> -->
+								<!-- <div style="clear:both;"></div>  -->
+
 
 							</div>
 						</div>
 					</div>
-					<div class="col-md-7 col-lg-7 col-xl-7">
+					<div class="col-md-7 col-lg-7 col-xl-7" class="collapse navbar-collapse" id="navbarToggleExternalContent" style="height: auto;">
+						
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="d-flex justify-content-end" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<form id="sitesearch" class="d-block d-sm-none" action="/ua/search" role="search">
-								<input name="gs" id="searchtext" class="placeholder animate-in" placeholder="Пошук…"
-									type="text">
-								<button class="svg" type="submit"><i class="icons _icon-search"></i></button>
-							</form>
-							<div  class="row mainnav clearfix">
+						<form id="sitesearch" class="d-block d-md-none" action="/ua/search" role="search">
+							<input name="gs" id="searchtext" class="placeholder animate-in" placeholder="Пошук…"
+								type="text">
+							<button class="svg" type="submit"><i class="icons _icon-search"></i></button>
+						</form>
+						<div class="d-flex justify-content-center">
+							<div class="row mainnav clearfix d-flex justify-content-end">
 								<div class="col-12">
 									<a id="mainnav"></a>
 									<nav role="navigation">
-										<ul class="nav d-flex justify-content-between">
+										<ul class="nav d-flex flex-column align-items-end flex-md-row justify-content-between">
 											<li class="nav-item" id="univercity"><a class="nav-link" href="/ua/info/">Університет</a></li>
 											<li class="nav-item" id="departments"><a class="nav-link" href="/ua/departments/">Факультети</a></li>
 											<li class="nav-item" id="enter"><a class="nav-link" href="https://vstup.oa.edu.ua">Вступ</a></li>
@@ -76,11 +83,11 @@
 								</div>
 							</div>
 
-							<div class="row topnav d-block d-sm-none clearfix">
+							<div class="row topnav d-block d-md-none clearfix">
 								<div class="col-12">
 									<a id="rolesnav"></a>
 									<nav role="navigation">
-										<ul class="nav d-flex justify-content-between">
+										<ul class="nav d-flex flex-column flex-md-row justify-content-between">
 											<li class="nav-item"><a class="nav-link" href="/ua/search">Мапа сайту</a></li>
 											<li class="nav-item"><a class="nav-link" href="/ua/info/news">Новини</a></li>
 											<li class="nav-item"><a class="nav-link" href="//events.oa.edu.ua">Події</a></li>
@@ -97,7 +104,7 @@
 
 						</div><!-- /.navbar-collapse -->
 					</div>
-					<div class="col-md-1 col-lg-1 col-xl-1 navicons d-none d-sm-block">
+					<div class="col-md-1 col-lg-1 col-xl-1 navicons d-none d-md-block">
 						<div id="sb-search" class="sb-search">
 							<form action="/ua/search">
 								<input class="sb-search-input" placeholder="Пошук…" type="search" name="gs" id="search">
