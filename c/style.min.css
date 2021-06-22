@@ -376,7 +376,6 @@ nav.blue {
 }
 .navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
     display: block;
-    max-width: 1200px;
 }
 /* -------- */
 #sitesearch {
