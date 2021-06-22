@@ -376,6 +376,7 @@ nav.blue {
 }
 .navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
     display: block;
+    max-width: 1200px;
 }
 /* -------- */
 #sitesearch {
@@ -1454,7 +1455,7 @@ img.pica {
     font-size: 1em
 }
 .social a {
-    margin-right: .3em;
+    margin-right: .6em;
     font-size: 18px
 }
 .social .android {
@@ -1978,7 +1979,8 @@ select.input-sm {
     background-color: #fffecd
 }
 .navbar {
-    margin-bottom: 0
+    margin-bottom: 0;
+    padding: 0%
 }
 .navbar-collapse {
     max-height: 315px
@@ -2064,7 +2066,8 @@ select.input-sm {
 .card-header {
     padding: .5em 1em .8em;
     border-top-right-radius: 0;
-    border-top-left-radius: 0
+    border-top-left-radius: 0;
+    border-bottom:rgba(0, 0, 0, 0);
 }
 .panel-group .card {
     margin-bottom: 0;
@@ -2074,6 +2077,10 @@ select.input-sm {
 .panel-group .card+.card {
     margin-top: 0
 }
+.card-header:first-child{
+    border-radius: 0%;
+}
+
 @media (max-width:767px) {
     .navbar-nav .open .dropdown-menu .nav-item a {
         line-height: 22px
@@ -2227,6 +2234,7 @@ body {
     width: 100%;
     min-height: 220px
 }
+
 @media (min-width:992px) and (max-width:1199px) {
     #footer {
         height: 196px
