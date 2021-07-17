@@ -249,16 +249,18 @@ a:hover {
     top: 70px
 }
 .logo_s {
-    display: none
+    display: none;
+    height: 65px;
 }
 .stick .logo_s {
     display: block;
     opacity: 1;
     filter: alpha(opacity=100);
-    height: auto
+    /* height: auto */
 }
 .logo {
-    display: block
+    display: block;
+    height: 80px;
 }
 .stick .logo {
     display: none
@@ -275,7 +277,7 @@ a:hover {
 }
 .stick .navbar-light .container .nav-row .navbar-header .navbar-brand {
     margin-top: 0;
-    padding: 0 0 0 15px
+    /* padding: 0 0 0 15px */
 }
 .stick .navbar-light .container .nav-row .navbar-header .navbar-brand p:last-of-type {
     padding: 22px 0
@@ -340,7 +342,7 @@ nav.blue {
 }
 .navbar-light .container .nav-row .navbar-header .navbar-brand img {
     float: left;
-    margin-right: 10px
+    margin-right: 10px;
 }
 /* .navbar-light .container .nav-row .navbar-header .navbar-brand div {
     float: left
@@ -636,6 +638,11 @@ nav.blue {
     padding-bottom: 2em;
     padding-top: 1.5em;
     background: #fffecd
+}
+.news-block .three-strings{
+    height: 255px;
+    flex-wrap: inherit;
+    overflow: hidden;
 }
 .news-block a img {
     margin-bottom: 13px
@@ -1985,7 +1992,7 @@ select.input-sm {
     max-height: 315px
 }
 .navbar-brand {
-    padding: 0 0 14px 15px;
+    /* padding: 0 0 14px 15px; */
     font-size: 20px
 }
 
@@ -2094,7 +2101,8 @@ select.input-sm {
         display: none !important
     }
     .navbar-light .navbar-brand {
-        padding: 0
+        padding: 0;
+        padding-left: 15px
     }
     .main .container .category .category-block {
         font-size: 1.1em
@@ -2122,10 +2130,10 @@ select.input-sm {
     .navbar-brand .logo_s {
         display: block;
         width: 35px;
-        margin: 1px 0
+        margin: 1px 0;
     }
     .navbar-brand .logo {
-        display: none
+        display: none;
     }
     #Home .navbar-light .container .nav-row .navbar-header .navbar-brand p:last-of-type, #Inner .navbar-light .container .nav-row .navbar-header .navbar-brand p:last-of-type {
         padding: 20px 0;
@@ -2184,6 +2192,11 @@ select.input-sm {
         overflow: auto;
         height: auto;
         margin-bottom: 0
+    }
+    .news-block .container .news .row>.three_strings{
+    height: 255px;
+    flex-wrap: inherit;
+    overflow: hidden;
     }
     .news-block p.latest {
         margin-top: 2em;
